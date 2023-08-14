@@ -1,0 +1,122 @@
+.container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,span {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.col {
+    padding: 0 10px;
+}
+
+.w33 {
+    width: 33.33%
+}
+
+.card-content {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 60px 0 rgba(0,0,0, .2);
+}
+
+.card-button-wrapper {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    transition: all 0.5s ease;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+}
+
+.btn {
+    padding: 20px 30px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 0 2px;
+}
+
+.card-content img{
+    opacity: 1;
+}
+
+.card-content:hover .card-button-wrapper {
+    opacity: 1;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.card-content:hover img{
+    opacity: 0.6;
+} 
+
+.card-info {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-container {
+    margin: 0 auto;
+    background-color: #f9c345;
+    padding: 50px
+}
+
+.card {
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.card-img {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: top center;
+    transition: background-position 1.2s ease-out ;
+}
+
+.card-title {
+    padding: 10px;
+    color: #f9c345;
+    text-align: center;
+}
+
+.card1 .card-img{
+    background-image: url(assets/reiro-image.png);
+}
+
+.card2 .card-img{
+    background-image: url(assets/reiro-dark.png);
+}
+
+.card3 .card-img{
+    background-image: url(assets/reiro-sepia.png);
+}
+
+.card:hover .card-img {
+    background-position: bottom center;
+}
+
