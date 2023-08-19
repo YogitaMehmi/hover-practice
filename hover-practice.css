@@ -280,15 +280,17 @@ a {
 /* add to icons common property */
 .add-to-icon-wrapper {
     opacity: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
     position: absolute;
     top: 5%;
-    right: 4%;
+    right: 10px;
     transition: all 0.4s ease;
 }
 
 .add-to-icon {
-    padding: 12px;
     border-radius: 100%;
     background-color: #fff;
     color: #000;
@@ -301,14 +303,36 @@ a {
     transition: all 0.4s ease;
 }
 
-
 /* compare icon */
-.compare-icon {
-    position: absolute;
-    top: 40px;
-    right: -100%;
+.compare-wrapper {
+    position: relative;
+    right: -10px;
+    transition: right 0.4s ease;
 }
 
+.add-to-text {
+    padding: 4px;
+    display: inline-flex;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* add to icon hover effects */
+.new-arrival-card:hover .add-to-icon-wrapper {
+    opacity: 1;
+    right: 8%;
+}
+
+.new-arrival-card:hover .compare-wrapper {
+    right: 0;
+}
+
+.add-to-btn:hover .add-to-text {
+    opacity: 1;
+}
 /* Button version1 */
 .new-arrival-btn-v1 {
     display: inline-flex;
@@ -351,15 +375,6 @@ a {
 }
 
 
-/* add to icon hover effects */
-.new-arrival-card:hover .add-to-icon-wrapper {
-    opacity: 1;
-    right: 10%;
-}
-
-.new-arrival-card:hover .compare-icon {
-    right: 0;
-}
 
 /* button hover effects */
 .new-arrival-btn:hover .new-arrival-btn-v1 {
