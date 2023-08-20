@@ -250,10 +250,11 @@ a {
 .new-arrival-btn {
     position: relative;
     display: inline-flex;
-    align-items: center;
+    justify-content: center;
     background-color: #fff;
     color: #000;
     padding: 10px;
+    min-width: 157px;
     border-radius: 34px;
     margin: 4px;
     overflow: hidden;
